@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>阻止访问</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <embed class="Svgimg" src="img/Terrorism.svg"/>
+        </div>
+        <div class="text">
+            <H2 id="info" >警告</H2>
+            <p id="text">您访问的链接，可能存在收集用户隐私、用于广告展示或者其他恶意行为，纸盒 DNS 已经将其拦截。如果存在误杀请联系管理员。</p>
+            <br/>
+            <p id="tip">目标地址：<span id="StopUrl" style="color: #E67474;"></span></p>
+        </div>
+    </div>
+    <script>
+        const siteUrl = window.location.host;
+        if (siteUrl == "IPV4地址" || siteUrl == "IPV6地址（可选，如不用请删除）" || siteUrl == "站点域名，不加http(s)") {
+            document.getElementById("text").innerHTML = "这里并不开放，请尽快离开。如果您只是想要了解并使用纸盒DNS，请访问下面链接。";
+            document.getElementById("tip").innerHTML = "纸盒DNS <a href='https://zhebk.cn/DNS.html' target='_blank' rel='nofollow noopener noreferrer'>https://zhebk.cn/DNS.html</a>";
+        } else {
+            document.getElementById("StopUrl").innerHTML = siteUrl;
+        }
+    </script>
+</body>
+</html>
