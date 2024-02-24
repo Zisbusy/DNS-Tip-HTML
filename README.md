@@ -1,5 +1,5 @@
 # DNS-Tip-HTML
-有好的DNS拦截提示页面
+友好的DNS拦截提示页面
 
 ## 如何使用
 clone 本项目到本地 修改 index.html 中的ip信息，域名信息，提示信息。
