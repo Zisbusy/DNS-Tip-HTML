@@ -72,6 +72,9 @@ p {
 .text a:hover {
     color: #72C5A6;
 }
+#tip {
+	word-break: break-all;
+}
 @media ( prefers-color-scheme: dark ) {
     html, body {
         background: #171717;
